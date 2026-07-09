@@ -1,56 +1,45 @@
-# Project Contribution & Task Division
-Project: YOLO Traffic Sign Detection under Night & Blur Scenes
+# 项目成员与分工说明 (Project Contributions)
 
-## Member Task List
-1. Zhou Zixun (Module A, Deadline: 06.05)
-Deliverables:
-- Final YOLO-format dataset
-- Data augmentation source code
-- Special test set for night/blur scenarios
-Docking: Dataset for B & C model training; test set for D evaluation
+本项目由以下五位成员协作完成，各成员的核心职责与具体交付物如下：
 
-2. Gao Yating (Module B, Deadline: 06.07)
-Deliverables:
-- Baseline model weight (.pt)
-- Complete training logs
-- Baseline performance table (mAP / FLOPs / FPS)
-Docking: All materials submit to D for baseline comparison
+## 1. 周子勋 (负责部分 A - 数据准备)
+- **截止日期:** 6.05
+- **核心交付物:**
+  1. 最终数据集 (YOLO格式)
+  2. 数据增强代码
+  3. 夜间/模糊测试集
+- **对接说明:** 为高雅婷(B)和薛鈺玺(C)的模型训练提供数据依赖；为杨诗钰(D)提供测试集做评估。
 
-3. Xue Yuxi (Module C, Deadline: 06.11)
-Deliverables:
-- Improved model weight (.pt)
-- Code modification description doc
-- Preliminary comparison: Baseline VS Improved Model
-Docking: All materials submit to D for final evaluation
+## 2. 高雅婷 (负责部分 B - 基线模型)
+- **截止日期:** 6.07
+- **核心交付物:**
+  1. 基线模型权重 (.pt)
+  2. 训练日志
+  3. 性能表 (mAP/FLOPs/FPS)
+- **对接说明:** 为杨诗钰(D)提供基线模型用于跑评估对比。
 
-4. Yang Shiyu (Module D, Deadline: 06.14)
-Deliverables:
-- Multi-condition evaluation charts
-- Confusion matrix
-- Error analysis table (10 typical failure cases)
-- Verification conclusion of model improvement
-Docking: All analysis results for the whole group to write report & PPT
+## 3. 薛鈺玺 (负责部分 C - 模型改进)
+- **截止日期:** 6.11
+- **核心交付物:**
+  1. 改进模型权重 (.pt)
+  2. 代码修改说明
+  3. 基线 vs 改进初步对比
+- **对接说明:** 提供改进模型给杨诗钰(D)以完成最终评估。
 
-5. Zhang Yuxuan (Module E, Deadline: 06.14)
-Deliverables:
-- Real-time detection demo
-- Demo presentation video
-- GitHub repo with complete README
-- (Optional) ONNX / TensorRT deployment files
-Docking: Full repo available for all members; demo & video for defense presentation
+## 4. 杨诗钰 (负责部分 D - 模型评估)
+- **截止日期:** 6.14
+- **核心交付物:**
+  1. 条件评估图表
+  2. 混淆矩阵
+  3. 错误分析表 (10例)
+  4. 改进验证结论
+- **对接说明:** 最终产出数据与图表，供全组撰写报告和制作 PPT。
 
-## Work Dependency
-1. Module A dataset is prerequisite for Module B & C model training
-2. Baseline weight (B) & improved weight (C) are required inputs of Module D evaluation
-3. D analysis results + E demo & code are core materials for final report and defense
-
-## File Naming Standard
-Format: [ModuleID]_file_name_YYMMDD.suffix
-Example:
-A_dataset_0605.zip
-B_baseline_0607.pt
-D_evaluation_figure_0614.png
-
-## Storage Rule
-- Large files (dataset, weights): Store in cloud disk, only put download link in repo
-- Source code, docs, charts, logs: Store in corresponding module folders in GitHub repo
+## 5. 张瑜暄 (负责部分 E - 部署演示与工程整合)
+- **截止日期:** 6.14
+- **核心交付物:**
+  1. 实时检测 Demo
+  2. 演示视频
+  3. GitHub仓库搭建与维护 (含 README)
+  4. (可选) ONNX/TensorRT 转换
+- **对接说明:** 维护仓库供全组下载最终代码；Demo 用于最终的答辩展示。
